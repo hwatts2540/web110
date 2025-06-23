@@ -1,0 +1,59 @@
+/* Hannah Watts- June 15th, 2025 */
+nav {
+  height: 35px;
+  background-color: #d4c1a1; /* Tan color */
+}
+
+/* Navigation Links */
+a:link {
+  color: #8b1010;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #00602b;
+  background-color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header Banner */
+header {
+  background-color: #00602b; /* Deep green banner */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Main Area */
+main {
+  font-weight: bold;
+  background-image: url("background.webp"); /* Marble background */
+  background-repeat: repeat-x;
+  padding: 20px;
+}
+
+/* Images */
+img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #8b1010;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}/Users/hannahwatts/Documents
