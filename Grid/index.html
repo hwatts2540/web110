@@ -1,0 +1,136 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>10 great places</title
+
+ <style>   <style>
+    /* Global Reset and Body Styling */
+    * {
+      margin: 0; /* Removes all default margin on every element to ensure consistent spacing. */
+      padding: 0; /* Removes all default padding on every element for consistency. */
+      box-sizing: border-box; /* Includes padding and border within the element’s width and height, making sizing easier. */
+    }
+
+    /* Page container and background styling */
+    html, body {
+      background: linear-gradient(9deg, #d4d2d6, #200b30); /* Sets a subtle angled gradient as the page background. */
+      padding: 15px; /* Adds space inside the edges of the page content. */
+      border: 2px solid #190329; /* Adds a dark purple border around the page content. */
+      border-radius: 20px; /* Rounds the corners of the border for a softer look. */
+      font-family: Arial, Helvetica, sans-serif; /* Uses clean, sans-serif fonts for readability. */
+      color: #fff; /* Sets text color to white for contrast against dark background. */
+      min-height: 100vh; /* Ensures the page content fills at least the full viewport height. */
+    }
+
+    /* Heading Styles */
+    h1, h2 {
+      font-size: 3vh; /* Sets font size relative to viewport height for responsiveness. */
+      padding: 2vh; /* Adds vertical and horizontal padding around headings. */
+    }
+
+    h2 {
+      border-bottom: 2px solid #25053a; /* Adds a dark purple line beneath secondary headings for emphasis. */
+      margin-bottom: 10px; /* Adds spacing below the heading to separate it from following content. */
+    }
+
+    /* CSS Grid Wrapper for images */
+    .grid-wrapper {
+      display: grid; /* Enables CSS Grid layout on the container. */
+      grid-gap: 10px; /* Adds 10 pixels of space between grid items. */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates responsive columns with a minimum width of 250px, filling available space automatically. */
+      grid-auto-rows: 250px; /* Sets each grid row height to 250 pixels by default. */
+      grid-auto-flow: dense; /* Fills in gaps by placing grid items efficiently, even out of order. */
+    }
+
+    /* Grid item spanning classes */
+    .wide {
+      grid-column: span 2; /* Makes the grid item span across two columns horizontally. */
+    }
+
+    .tall {
+      grid-row: span 2; /* Makes the grid item span across two rows vertically. */
+    }
+
+    .big {
+      grid-column: span 2; /* Makes the grid item span two columns wide. */
+      grid-row: span 2; /* Makes the grid item span two rows tall. */
+    }
+
+    /* Figure (Image and Caption Container) Styling */
+    figure {
+      margin: 0; /* Removes default margin to tightly control spacing. */
+      border-radius: 5px; /* Rounds corners of each figure for a softer appearance. */
+      overflow: hidden; /* Prevents content like images from spilling out of the rounded corners. */
+      border: 2px solid #190329; /* Adds a dark purple border around each figure container. */
+      background: #2a1f46; /* Applies a dark purple background inside each figure. */
+      display: flex; /* Uses Flexbox layout inside each figure to arrange child elements vertically. */
+      flex-direction: column; /* Stacks the image and caption vertically inside the figure. */
+      height: 100%; /* Makes figure fill the full height of its grid cell. */
+    }
+
+    /* Image Styling */
+    figure img {
+      width: 100%; /* Makes the image fill the entire width of the figure. */
+      height: auto; /* Keeps the image’s aspect ratio intact. */
+      object-fit: cover; /* Ensures the image covers the figure area without distortion, cropping if needed. */
+      flex-grow: 1; /* Lets the image expand to fill vertical space inside the figure. */
+      display: block; /* Eliminates inline spacing below the image. */
+      border-bottom: 1px solid #190329; /* Adds a subtle dividing line between image and caption. */
+    }
+
+    /* Caption Styling */
+    figcaption {
+      padding: 8px 10px; /* Adds padding inside the caption for readability. */
+      background-color: #200b30; /* Uses a dark purple background distinct from the image. */
+      color: white; /* Sets caption text color to white for contrast. */
+      font-size: 2.5vh; /* Responsive font size based on viewport height. */
+      text-align: center; /* Centers caption text horizontally. */
+      flex-shrink: 0; /* Prevents caption from shrinking smaller than its content inside the flex container. */
+    }
+  </style>
+
+ </head> <body><h1> A top 10 list of places to visit in the US according to Travel Advisor</h1>
+        <h2> What are your top 10?</h2> </body>
+
+<main>  <section class="grid-wrapper">
+      <figure>
+        <img src="images/empirestate.jpg" alt="Empire State Building" />
+        <figcaption>Empire State Building</figcaption>
+      </figure>
+ <figure>
+        <img src="images/washingtondc.png" alt="Washington DC" />
+        <figcaption>Washington DC</figcaption>
+      </figure>
+ <figure class="tall">
+        <img src="images/sanfran.jpg" alt="San Francisco" />
+        <figcaption>San Francisco</figcaption>
+      </figure>
+<figure class="big">
+        <img src="images/lasvegas.jpg" alt="Las Vegas" />
+        <figcaption>Las Vegas</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="images/orlando.png" alt="Orlando" />
+        <figcaption>Orlando</figcaption>
+      </figure>
+      <figure class="tall">
+        <img src="images/niagra.jpg" alt="Niagara Falls" />
+        <figcaption>Niagara Falls</figcaption>
+      </figure>
+       <figure>
+        <img src="images/miami.jpg" alt="Miami" />
+        <figcaption>Miami</figcaption>
+      </figure>
+      <figure class="big">
+        <img src="images/grandcanyon.jpg" alt="Grand Canyon" />
+        <figcaption>Grand Canyon</figcaption>
+      </figure>
+      <figure class="big">
+        <img src="images/yellowstone.webp" alt="Yellowstone National Park" />
+        <figcaption>Yellowstone National Park</figcaption>
+      </figure>
+      <figure class="big">
+        <img src="images/sandiego.jpg" alt="San Diego" />
+        <figcaption>San Diego</figcaption>
+      </figure>
+</section>
+ </main>
+</main>
+ </html>
