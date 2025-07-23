@@ -1,0 +1,151 @@
+/*
+ * File: styles.css
+ * Author: Hannah Watts
+ * Date: June 30, 2025
+ * Subject: Midterm - About me & Fashion
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    background-color: #F8F5EF;
+    color: #4A403A;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#body-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E0C7B2;
+    padding: 2.5em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    color: #4A403A;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #6C6057;
+}
+
+nav {
+    background-color: #D3B9A4;
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4A403A;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+}
+
+main {
+    padding: 0 1.5em;
+    margin-bottom: 3em;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 2.5em;
+    margin-bottom: 2.5em;
+    border-radius: 6px;
+    
+}
+
+section h2,
+section h3 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    color: #6C6057;
+    border-bottom: 1px solid #D3B9A4;
+    padding-bottom: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+section h3 {
+    font-size: 1.5em;
+    border-bottom: none;
+    padding-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+section p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+section img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 4px;
+}
+
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 1.8em;
+}
+
+ul li, ol li {
+    margin-bottom: 0.6em;
+    font-size: 1em;
+}
+
+a {
+    color: #A08C7A;
+    text-decoration: none;
+    /* You removed transition, keeping it removed as per your input */
+}
+
+a:hover,
+a:focus {
+    color: #7A6F62;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #6C6057;
+    color: #F8F5EF;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #F8F5EF;
+    text-decoration: underline;
+}
+
+ 
