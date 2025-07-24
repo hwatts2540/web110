@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Dream Boutique</title>
+  <style>
+    /* General Page Setup (consistent with external style.css basics) */
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f7f3ee; /* light beige */
+      color: #3b2f2f;            /* soft brown text */
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #wrapper {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1em;
+      box-sizing: border-box;
+    }
+
+    header {
+      padding: 2em 1em;
+      background-color: #e7dcd5; /* soft warm blush */
+      margin-bottom: 2em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0.5em auto 1.5em auto;
+      padding: 0 1em;
+    }
+
+    nav {
+      background-color: #a97c68;
+      padding: 0.5em 0;
+      margin-bottom: 2em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 1.5em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0.5em 0;
+      display: block;
+    }
+
+    footer {
+      margin-top: 3em;
+      padding: 1em 0;
+      background-color: #e7dcd5;
+      font-size: 0.9em;
+    }
+
+    footer p {
+      margin: 0;
+      padding: 0.5em 0;
+    }
+
+    footer a {
+      color: #3b2f2f;
+      text-decoration: none;
+    }
+
+    /* === Content Columns Layout (copied from external style.css) === */
+    .content-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 2em 0;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 280px;
+      max-width: 48%; /* Each column takes up to 48% of the available width */
+      background-color: white;
+      padding: 2em;
+      /* Removed border-radius/box-shadow for ultimate simplicity,
+         but you can add them back if you prefer a subtle design */
+      box-sizing: border-box;
+      text-align: left; /* Aligns text within columns to the left */
+    }
+
+    /* --- Minimal Form Styles --- */
+    form {
+      /* Removed background-color, padding, border-radius, box-shadow here
+         as they are now applied to the .column parent */
+      max-width: none; /* Let the column define max width */
+      margin: 0 auto; /* Center form within its column if it's smaller */
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    select {
+      width: calc(100% - 1.2em); /* Full width minus padding */
+      padding: 0.6em;
+      margin-bottom: 1em; /* Space below inputs */
+      border: 1px solid #ccc;
+      font-size: 1em;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 4em; /* Slightly smaller for simplicity */
+    }
+
+    /* Styles for radio and checkbox options */
+    .option-group {
+        margin-bottom: 1em;
+    }
+
+    .option-group label {
+        display: inline-block;
+        font-weight: normal;
+        margin-right: 1em;
+        font-size: 0.9em;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #a97c68;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      cursor: pointer;
+      font-family: 'Georgia', serif;
+      font-size: 1em;
+      margin: 0.5em;
+    }
+
+    /* Image inside form column */
+    .column img {
+      width: 100%; /* Flexible image */
+      height: auto;
+      max-width: 250px; /* Limits max size */
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    /* --- Responsive adjustments for form --- */
+    @media (max-width: 600px) {
+      #wrapper {
+        width: 95%;
+        padding: 0.5em;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 0.5em 0;
+      }
+
+      /* Columns will stack on small screens */
+      .content-columns {
+        flex-direction: column;
+        gap: 1.5em;
+      }
+
+      .column {
+        max-width: 100%;
+        padding: 1.5em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      textarea,
+      select {
+        width: 100%;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        width: calc(100% - 1em);
+        margin: 0.5em 0;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Connect With Dream Boutique</h1>
+      <p>Have a question or just want to say hello? Use this simple form to get in touch with us.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main class="content-columns">
+      <section class="column">
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+          <label for="fullName">Your Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+
+          <label for="emailAddr">Your Email:</label>
+          <input type="email" id="emailAddr" name="emailAddr" required>
+
+          <label for="contactDate">Preferred Contact Date:</label>
+          <input type="date" id="contactDate" name="contactDate">
+
+          <div class="option-group">
+              <label>Reason for Contact:</label>
+              <label><input type="radio" name="reason" value="general"> General Inquiry</label>
+              <label><input type="radio" name="reason" value="feedback"> Feedback</label>
+          </div>
+
+          <div class="option-group">
+              <label><input type="checkbox" name="newsletter" value="yes"> Sign up for our newsletter?</label>
+          </div>
+
+      
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Clear Form">
+
+        </form>
+      </section>
+
+      <section class="column">
+        <h2>We're Here to Help</h2>
+        <p>Your questions and feedback are important to us. We aim to respond to all inquiries within 24-48 hours.</p>
+        <img src="https://via.placeholder.com/300x200?text=Contact+Image" alt="Abstract contact image with soft colors">
+        <p>Thank you for connecting with Dream Boutique!</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dream Boutique. All rights reserved. | <a href="mailto:info@dreamboutique.com">Email Us</a> | <a href="files/boutique_guide.pdf" download="Boutique_Style_Guide.pdf">Download Style Guide</a></p>
+    </footer>
+  </div>
+</body>
+</html>
