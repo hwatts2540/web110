@@ -109,9 +109,8 @@ nav a {
   background-color: white;  
   padding: 2em;             
   border-radius: 8px;       
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   box-sizing: border-box;  
-  text-align: left;         
+  text-align: center;         
 }
 
 /* === Gallery / Image Styling (General) === */
@@ -122,7 +121,6 @@ nav a {
   max-width: 300px;       
   margin: 1em 0;         
   border-radius: 8px;     
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
 /* === Buttons and Links (General) === */
@@ -172,7 +170,7 @@ input[type="reset"] {
   max-width: none;          /* Override general img max-width */
   margin: 0 0 0.8em 0;      /* Margin below image in ems */
   border-radius: 4px;       /* Smaller border-radius for image within card */
-  box-shadow: none;         /* No shadow on image inside card */
+       /* No shadow on image inside card */
 }
 
 .product-card h3 { /* Product Article Name */
@@ -242,19 +240,19 @@ input[type="reset"] {
   }
 
   .column {
-    max-width: 100%; /* Columns take full width */
-    padding: 1.5em; /* Adjust padding for smaller screens in ems */
+    max-width: 100%; 
+    padding: 1.5em; 
   }
 
-  /* === Images === */
+
   .gallery img,
-  .column img { /* General image adjustment */
-    max-width: 80%; /* Images adjust to 80% of column width */
+  .column img { 
+    max-width: 80%; 
   }
 
-  /* === Product Cards (within shop-grid) === */
+ 
   .shop-grid {
-      justify-content: center; /* Ensure cards are centered when they wrap */
+      justify-content: center; 
   }
 
   .product-card {
